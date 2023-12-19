@@ -1,0 +1,1857 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nopcommerce Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 19, 2023 06:36:48 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 19, 2023 06:36:48 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 19, 2023 06:36:50 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>14</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='9%'><b>14</b> steps passed</small></div>
+<div>
+<small data-tooltip='9%'><b>14</b> steps failed,
+<b>121</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Desktops Test":0.669,"Laptops and notebooks page":0.034,"Login functionality":0.026,"Top Menu Test":0.038
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>0</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Jay Vaghani</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Nop commerce</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 14,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 14,
+failGrandChild: 14,
+warningGrandChild: 0,
+skipGrandChild: 121,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Desktops Test</p>
+            <p class="text-sm">
+              <span>18:36:49</span> / <span>00:00:00:669</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Desktops Test</h5>
+<span class='badge badge-success'>12.19.2023 18:36:49</span>
+<span class='badge badge-danger'>12.19.2023 18:36:50</span>
+<span class='badge badge-default'>00:00:00:669</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As user I want to verify the product arranged in alphabetical order</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify the product arranged in alphabetical order</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnDesktopsTab()">
+                <span>When I mouse hover and click on Desktops tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnDesktopLinkAndClick(HomePage.java:88)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnDesktopsTab(TopMenuTestSteps.java:22)
+	at ✽.I mouse hover and click on Desktops tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iPassSelectMenuMethodName(java.lang.String)">
+                <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.DesktopsTestSteps.iSelectSortByPosition(java.lang.String)">
+                <span>And I select sort by position "Name (Z - A)"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.DesktopsTestSteps.iShouldBeAbleToVerifyThatTheProductIsArrangedInDescendingOrder()">
+                <span>Then I should be able to verify that the product is arranged in descending order</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "HTC Touch HD"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "HTC Touch HD"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "HTC Touch HD"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "Product 1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£74.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "iPhone"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "iPhone"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "iPhone"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "product 11"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£75.46"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "iPod Classic"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "iPod Classic"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "iPod Classic"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "product 20"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£74.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "MacBook"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "MacBook"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "MacBook"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "Product 16"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£368.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="73"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "MacBook Air"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "MacBook Air"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "MacBook Air"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "Product 17"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£736.23"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that product is added to shopping cart successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When I mouse hover and click on Currency Dropdown</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:52)
+	at com.tutorialsninja.demo.pages.DesktopsPage.clickOnCurrency(DesktopsPage.java:109)
+	at com.tutorialsninja.demo.steps.DesktopsTestSteps.iMouseHoverAndClickOnCurrencyDropdown(DesktopsTestSteps.java:22)
+	at ✽.I mouse hover and click on Currency Dropdown(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/desktopsteststeps.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I mouse hover and click on £Pound Sterling</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I mouse hover and click on Desktops tab</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I select sort by position "Name (A - Z)"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on "Sony VAIO"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the text "Sony VAIO"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I enter qty "1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I verify the message "Success: You have added HP LP3065 to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link "shopping cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I Verify the Product name "Sony VAIO"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Model "Product 19"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I Verify the Todal "£736.23"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="105"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Laptops and notebooks page</p>
+            <p class="text-sm">
+              <span>18:36:50</span> / <span>00:00:00:034</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Laptops and notebooks page</h5>
+<span class='badge badge-success'>12.19.2023 18:36:50</span>
+<span class='badge badge-danger'>12.19.2023 18:36:50</span>
+<span class='badge badge-default'>00:00:00:034</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=105</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify products price display high to low successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab()">
+                <span>When I mouse hover and click on Laptops & Notebooks tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnLaptopAndNotebooksLinkAndClick(HomePage.java:98)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab(TopMenuTestSteps.java:32)
+	at ✽.I mouse hover and click on Laptops & Notebooks tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/laptopandnotebookspagesteps.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>And I click on "Show All Laptops & Notebooks"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iSelectSortBy(java.lang.String)">
+                <span>And I select sort by "Price (High > Low)"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iShouldBeAbleToVerifyThatTheProductIsArrangedInHighToLowOrder()">
+                <span>Then I should be able to verify that the product is arranged in High to Low order</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="112"><span class="badge log fail-bg mr-2">Fail</span>User should be able to verify that user place order successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab()">
+                <span>When I mouse hover and click on Laptops & Notebooks tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnLaptopAndNotebooksLinkAndClick(HomePage.java:98)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab(TopMenuTestSteps.java:32)
+	at ✽.I mouse hover and click on Laptops & Notebooks tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/laptopandnotebookspagesteps.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>And I click on "Show All Laptops & Notebooks"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iSelectSortBy(java.lang.String)">
+                <span>And I select sort by "Price (High > Low)"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iSelectProduct(java.lang.String)">
+                <span>And I Select Product "MacBook"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheProductText(java.lang.String)">
+                <span>And I verify the productText "MacBook"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnButtonOnMacBookPage(java.lang.String)">
+                <span>And I click on "Add To Cart" button on MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheMacBookMessage(java.lang.String)">
+                <span>And I verify the MacBook message "Success: You have added MacBook to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnLinkShoppingCartDisplayOnMacBookPage()">
+                <span>And I click on link “shopping cart” display on MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheTextFromMacBookPage(java.lang.String)">
+                <span>And I verify the text "Shopping Cart" from MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheTextProductName(java.lang.String)">
+                <span>And I verify the text "MacBook" product name</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iChangeTheQuantity(java.lang.String)">
+                <span>And I change the quantity "2"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnTab(java.lang.String)">
+                <span>And I click on "Update" tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheMessageOnMacBookPage(java.lang.String)">
+                <span>And I verify the message "Success: You have modified your shopping cart!" on MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheTotal£(int,int)">
+                <span>And I verify the Total £737.45</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnButtonOnMACBookPage(java.lang.String)">
+                <span>And I click on "Checkout" button on MACBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheTextOnMacBookPageShoppingCart(java.lang.String)">
+                <span>And I verify the text "checkout" on MacBook page shopping cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheTextOnMacBookPage(java.lang.String)">
+                <span>And I verify the text "New Customer" on MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnRadioButton(java.lang.String)">
+                <span>And I click on "Guest Checkout" radio button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnTabOnMacBookPage(java.lang.String)">
+                <span>And I click on "Continue" tab on MacBook page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iEnterBelowDetailsInTheForm(io.cucumber.datatable.DataTable)">
+                <span>And I enter below details in the form</span>
+      <div><table class='markup-table table '><tr><td>John</td><td>Smith</td><td>john123@gmail.com</td><td>056981239</td><td>CrossWay</td><td>Slough</td><td>363641</td><td>United Kingdom</td><td>Cardiff</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnButtonOnCheckoutPage(java.lang.String)">
+                <span>And I click on "Continue" Button on checkout page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iAddCommentsAboutYourOrderIntoTextArea()">
+                <span>And I add comments about your order into text area</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iCheckTheTermsConditionsCheckBox()">
+                <span>And I check the Terms & Conditions check box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iClickOnContinue()">
+                <span>And I click on continue</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.LaptopAndNoteBooksPageSteps.iVerifyTheMessageOnCheckoutPage(java.lang.String)">
+                <span>Then I verify the message "Warning: Payment method required!" on checkout page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="139"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login functionality</p>
+            <p class="text-sm">
+              <span>18:36:50</span> / <span>00:00:00:026</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login functionality</h5>
+<span class='badge badge-success'>12.19.2023 18:36:50</span>
+<span class='badge badge-danger'>12.19.2023 18:36:50</span>
+<span class='badge badge-default'>00:00:00:026</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=139</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As user I want to navigate to login link and verify the login and logout functionality</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="140"><span class="badge log fail-bg mr-2">Fail</span>User should be able to navigate to login page successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iPassSelectMyAccountOptionsMethodParameterOnHomepage(java.lang.String)">
+                <span>When I pass selectMyAccountOptions method parameter "Login" on homepage</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.tutorialsninja.demo.utility.Utility.driver" is null
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:47)
+	at com.tutorialsninja.demo.pages.LoginPage.selectMyOptions(LoginPage.java:54)
+	at com.tutorialsninja.demo.steps.MyAccountSteps.iPassSelectMyAccountOptionsMethodParameterOnHomepage(MyAccountSteps.java:20)
+	at ✽.I pass selectMyAccountOptions method parameter "Login" on homepage(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/myaccountsteps.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.i_should_be_able_to_verify_the_text(java.lang.String)">
+                <span>Then I should be able to verify the text "Returning Customer"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log fail-bg mr-2">Fail</span>User should be able to login and logout successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iPassSelectMyAccountOptionsMethodParameterOnHomepage(java.lang.String)">
+                <span>When I pass selectMyAccountOptions method parameter "Login" on homepage</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.tutorialsninja.demo.utility.Utility.driver" is null
+	at com.tutorialsninja.demo.utility.Utility.clickOnElement(Utility.java:47)
+	at com.tutorialsninja.demo.pages.LoginPage.selectMyOptions(LoginPage.java:54)
+	at com.tutorialsninja.demo.steps.MyAccountSteps.iPassSelectMyAccountOptionsMethodParameterOnHomepage(MyAccountSteps.java:20)
+	at ✽.I pass selectMyAccountOptions method parameter "Login" on homepage(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/myaccountsteps.feature:15)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iEnterTheBelowDetailsInTheForm(io.cucumber.datatable.DataTable)">
+                <span>And I enter the below details in the form</span>
+      <div><table class='markup-table table '><tr><td>magnussmith123@gmail.com</td><td>smith123456</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iClickOnLoginButton()">
+                <span>And I click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iVerifyText(java.lang.String)">
+                <span>And I verify text "My Account"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iPassSelectMyAccountOptionsMethodParameterOnMyAccountPage(java.lang.String)">
+                <span>And I pass selectMyAccountOptions method parameter "Logout" on my account page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iVerifyTextFromHomepage(java.lang.String)">
+                <span>And I verify text "Account Logout" from homepage</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountSteps.iClickOnContinueButtonOnHomepage()">
+                <span>Then I click on continue button on homepage</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="153"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Top Menu Test</p>
+            <p class="text-sm">
+              <span>18:36:50</span> / <span>00:00:00:038</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Top Menu Test</h5>
+<span class='badge badge-success'>12.19.2023 18:36:50</span>
+<span class='badge badge-danger'>12.19.2023 18:36:50</span>
+<span class='badge badge-default'>00:00:00:038</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=153</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As user I want to navigate to Desktops, LaptopsAndNotebooks and Components menu successfully</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="154"><span class="badge log fail-bg mr-2">Fail</span>User should be able to navigate to Desktops menu successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnDesktopsTab()">
+                <span>When I mouse hover and click on Desktops tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnDesktopLinkAndClick(HomePage.java:88)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnDesktopsTab(TopMenuTestSteps.java:22)
+	at ✽.I mouse hover and click on Desktops tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/topmenuteststeps.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iPassSelectMenuMethodName(java.lang.String)">
+                <span>And I pass selectMenu method name "Show AllDesktops"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iShouldBeAbleToVerifyDesktopsText()">
+                <span>Then I should be able to verify Desktops text</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="159"><span class="badge log fail-bg mr-2">Fail</span>User should be able to navigate to LaptopsAndNotebooks menu successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab()">
+                <span>When I mouse hover and click on Laptops & Notebooks tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnLaptopAndNotebooksLinkAndClick(HomePage.java:98)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnLaptopsNotebooksTab(TopMenuTestSteps.java:32)
+	at ✽.I mouse hover and click on Laptops & Notebooks tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/topmenuteststeps.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iPassSelectMenuMethodName(java.lang.String)">
+                <span>And I pass selectMenu method name "Show AllLaptops & Notebooks"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iShouldBeAbleToVerifyLaptopsNotebooksText()">
+                <span>Then I should be able to verify Laptops & Notebooks text</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="164"><span class="badge log fail-bg mr-2">Fail</span>User should be able to navigate to Components menu successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iAmOnHomepage()">
+                <span>Given I am on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnComponentsTab()">
+                <span>When I mouse hover and click on Components tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:58)
+	at com.tutorialsninja.demo.utility.Utility.mouseHoverToElementAndClick(Utility.java:241)
+	at com.tutorialsninja.demo.pages.HomePage.mouseHoverOnComponentsLinkAndClick(HomePage.java:108)
+	at com.tutorialsninja.demo.steps.TopMenuTestSteps.iMouseHoverAndClickOnComponentsTab(TopMenuTestSteps.java:42)
+	at ✽.I mouse hover and click on Components tab(file:///C:/Users/vijay/IdeaProjects/tutotialsninja-sw-6/src/test/resources/features/topmenuteststeps.feature:21)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iPassSelectMenuMethodName(java.lang.String)">
+                <span>And I pass selectMenu method name "Show AllComponents"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.TopMenuTestSteps.iShouldBeAbleToVerifyComponentsText()">
+                <span>Then I should be able to verify Components text</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='105' id='106'>User should be able to verify products price display high to low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and notebooks page.User should be able to verify products price display high to low successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>14</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>14 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User should be able to verify the product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify the product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='89'>User should be able to verify that product is added to shopping cart successfully</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='105' id='106'>User should be able to verify products price display high to low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and notebooks page.User should be able to verify products price display high to low successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='105' id='112'>User should be able to verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and notebooks page.User should be able to verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='139' id='140'>User should be able to navigate to login page successfully</a>
+<div class="">
+<span class="badge badge-default">Login functionality.User should be able to navigate to login page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='139' id='144'>User should be able to login and logout successfully</a>
+<div class="">
+<span class="badge badge-default">Login functionality.User should be able to login and logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='154'>User should be able to navigate to Desktops menu successfully</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to Desktops menu successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='159'>User should be able to navigate to LaptopsAndNotebooks menu successfully</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to LaptopsAndNotebooks menu successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='164'>User should be able to navigate to Components menu successfully</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to Components menu successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>When I mouse hover and click on Currency Dropdown</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify that product is added to shopping cart successfully.When I mouse hover and click on Currency Dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='139' id='142'>When I pass selectMyAccountOptions method parameter "Login" on homepage</a>
+<div class="">
+<span class="badge badge-default">Login functionality.User should be able to navigate to login page successfully.When I pass selectMyAccountOptions method parameter "Login" on homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='139' id='146'>When I pass selectMyAccountOptions method parameter "Login" on homepage</a>
+<div class="">
+<span class="badge badge-default">Login functionality.User should be able to login and logout successfully.When I pass selectMyAccountOptions method parameter "Login" on homepage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">java.lang.IllegalArgumentException</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalArgumentException</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>When I mouse hover and click on Desktops tab</a>
+<div class="">
+<span class="badge badge-default">Desktops Test.User should be able to verify the product arranged in alphabetical order.When I mouse hover and click on Desktops tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='105' id='108'>When I mouse hover and click on Laptops & Notebooks tab</a>
+<div class="">
+<span class="badge badge-default">Laptops and notebooks page.User should be able to verify products price display high to low successfully.When I mouse hover and click on Laptops & Notebooks tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='105' id='114'>When I mouse hover and click on Laptops & Notebooks tab</a>
+<div class="">
+<span class="badge badge-default">Laptops and notebooks page.User should be able to verify that user place order successfully.When I mouse hover and click on Laptops & Notebooks tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='156'>When I mouse hover and click on Desktops tab</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to Desktops menu successfully.When I mouse hover and click on Desktops tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='161'>When I mouse hover and click on Laptops & Notebooks tab</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to LaptopsAndNotebooks menu successfully.When I mouse hover and click on Laptops & Notebooks tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:36:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='153' id='166'>When I mouse hover and click on Components tab</a>
+<div class="">
+<span class="badge badge-default">Top Menu Test.User should be able to navigate to Components menu successfully.When I mouse hover and click on Components tab</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
